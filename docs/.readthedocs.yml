@@ -1,0 +1,10 @@
+sphinx:
+  builder: html
+  configuration: source/conf.py
+
+python:
+  version: 3
+  install:
+    - method: pip
+      path: .
+    - requirements: source/requirements.txt

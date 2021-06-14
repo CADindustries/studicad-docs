@@ -1,0 +1,59 @@
+/* Fixes the size of the RTD flyout */
+/* .rst-versions {
+	width: 320px !important;
+} */
+
+/* Content area color */
+.wy-nav-content {
+	background: #dddddd;
+}
+
+/* Scroll Bar*/
+.wy-side-scroll {
+	width: auto;
+	overflow-y: auto;
+	margin-top: 0px;
+}
+
+/* width of the side panel */
+.wy-nav-side {
+	width: 320px;
+}
+
+/* content section full screen */
+.wy-nav-content {
+   max-width: none; 
+}
+
+/* set color of left side bar */
+.wy-nav-side,.wy-side-nav-search,.wy-nav-top {
+	/*background: #0079c1; /*005eb8 */
+   background: #006464;
+}
+
+/* Change caption color to be more legible */
+.wy-menu > .caption > span.caption-text {
+   color: #ffcccc;
+   font-size: 20px;
+}
+
+/* Change the version color to match caption color */
+.wy-side-nav-search>div.version {
+   color: #ffcccc;
+}
+
+/* Get rid of that ugly yellow highlight color and replace with something more appealing to the eye */
+.highlight .hll {
+   background-color: #fcfcfc;
+}
+/* 
+@media screen and (max-width: 768px) {
+
+	.wy-nav-content-wrap {
+		margin-left: 0px;
+	}
+
+	.wy-nav-side {
+		width: 500px;
+	}
+} */
