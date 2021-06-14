@@ -6,5 +6,5 @@ Here is some info about how to setup raspberry pi.
 Raspberry setup:
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-In `this <https://www.instructables.com/Efficient-Development-of-Java-for-the-Raspberry-Pi/>`__  repo install it using **Build and install directly from source**
+Go to `this <https://github.com/sarfata/pi-blaster>`__  repo and install it using **Build and install directly from source**
 
