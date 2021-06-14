@@ -28,18 +28,18 @@
 /* set color of left side bar */
 .wy-nav-side,.wy-side-nav-search,.wy-nav-top {
 	/*background: #0079c1; /*005eb8 */
-   background: #006464;
+   background: #e38fcd;
 }
 
 /* Change caption color to be more legible */
 .wy-menu > .caption > span.caption-text {
-   color: #ffcccc;
+   color: #006464;
    font-size: 20px;
 }
 
 /* Change the version color to match caption color */
 .wy-side-nav-search>div.version {
-   color: #ffcccc;
+   color: #006464;
 }
 
 /* Get rid of that ugly yellow highlight color and replace with something more appealing to the eye */

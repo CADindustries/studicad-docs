@@ -16,12 +16,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'robocadSim'
-copyright = '2020, crackanddie'
+project = 'studicad'
+copyright = '2021, crackanddie'
 author = 'crackanddie'
 
 # The full version, including alpha/beta/rc tags
-release = '1.3.7'
+release = '1.3.3.7'
 
 
 # -- General configuration ---------------------------------------------------
@@ -54,10 +54,10 @@ master_doc = 'index'
 html_theme = 'sphinx_rtd_theme'
 
 # Sidebar logo
-html_logo = "res/Logo_4_alpha.png"
+html_logo = "res/logo.png"
 
 # URL favicon
-html_favicon = "res/site_logo.ico"
+html_favicon = "res/logo.ico"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

@@ -3,11 +3,11 @@ Getting started
 
 Where to begin?  
 
-First you need to download robocadSim and run it. `Latest version. <https://github.com/CADindustries/robocadSim/tree/robocadSim_v1.3>`__  
+First you need to have VMX and Titan with **firmwarecad** software. If you are not from Russia or Estonia you can lick my ass and then maybe I will give this firmwares to you.
 
-I hope you have already chosen the language with which you will program your robot and the IDE for it.   
+Then you should choose IDE where you will write your programs - **NetBeans** or **IntelliJ**.  
 
-You can read how to start using libraries for the selected language `here. <https://robocadsim.readthedocs.io/en/latest/docs/all_docs/lib_docs/index.html>`__  
+You can read how to start using **picad4j** libraries for the selected IDE.
 
-Write a program, turn on the robot and run the code!
+Write a program, turn on the robot and run the code using **shufflecad**!
 
