@@ -39,7 +39,8 @@ OpenCV setup:
 
 	sudo apt install cmake git pkg-config wget
 
-3. On ``sudo apt install gfortran-arm-linux-gnueabihf`` could be a **error**. Sultion could be on the site https://www.raspberrypi.org/forums/viewtopic.php?t=235145.  
+3. On ``sudo apt install gfortran-arm-linux-gnueabihf`` could be a **error**. Solution could be on the site https://www.raspberrypi.org/forums/viewtopic.php?t=235145. 
+There is also could be the error:   *E: Unable to locate package gfortran-arm-linux-gnueabihf*, but don't worry about this.
 
 .. code-block:: bash
 	:linenos:
