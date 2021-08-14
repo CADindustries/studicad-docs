@@ -44,43 +44,37 @@ OpenCV setup:
 .. code-block:: bash
 	:linenos:
 
-	// So according to this howto what you did is:	
-
+	# So according to this howto what you did is:	
 	$ sudo su
-	# apt-cache madison hostapd
+	$ apt-cache madison hostapd
    	 hostapd | 2:2.6-21~bpo9~rpt1 | http://archive.raspberrypi.org/debian stretch/main armhf Packages
    	 hostapd | 2:2.4-1+deb9u2 | http://raspbian.raspberrypi.org/raspbian stretch/main armhf Packages
-	# apt-get install hostapd=2:2.4-1+deb9u2 -V
+	$ apt-get install hostapd=2:2.4-1+deb9u2 -V
 
-	// I fogot, you would like to prevent future update with:
+	# I fogot, you would like to prevent future update with:
+	$ apt-mark hold hostapd
 
-	# apt-mark hold hostapd
+	# And remove the directive later with:
+	$ apt-mark unhold hostapd
 
-	// And remove the directive later with:
-	
-	# apt-mark unhold hostapd
+	# IF THERE IS STILL THE ERROR TRY UPPER AFTER BELOW
 
-	// IF THERE IS STILL THE ERROR TRY UPPER AFTER BELOW
+	# The fix for me is to edit /etc/default/hostapd and set DAEMON_CONF="/etc/hostapd/hostapd.conf"
 
-	// The fix for me is to edit /etc/default/hostapd and set DAEMON_CONF="/etc/hostapd/hostapd.conf"
+	# hostapd FILE COULD NOT BE THERE SO CREATE IT THEN
 
-	// hostapd FILE COULD NOT BE THERE SO CREATE IT THEN
-
-	// I found the problem by adding:
-
+	# I found the problem by adding:
 	logger_syslog=-1
 
-	// to the
-
+	# to the
 	/etc/hostapd/hostapd.conf
 
-	// file. Then running
-
+	# file. Then running
 	sudo cat /var/log/syslog | grep hostapd 
 
-	// to see the error messages.
+	# to see the error messages.
 
-	// THIS SHOULD HELP
+	# THIS SHOULD HELP
 
 4. Then:  
   
