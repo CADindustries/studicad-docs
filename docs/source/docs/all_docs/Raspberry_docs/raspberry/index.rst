@@ -39,7 +39,48 @@ OpenCV setup:
 
 	sudo apt install cmake git pkg-config wget
 
-3. On ``sudo apt install gfortran-arm-linux-gnueabihf`` could be a error. Sultion could be on the site https://www.raspberrypi.org/forums/viewtopic.php?t=235145.
+3. On ``sudo apt install gfortran-arm-linux-gnueabihf`` could be a **error**. Sultion could be on the site https://www.raspberrypi.org/forums/viewtopic.php?t=235145.  
+
+.. code-block:: bash
+	:linenos:
+
+	// So according to this howto what you did is:	
+
+	$ sudo su
+	# apt-cache madison hostapd
+   	 hostapd | 2:2.6-21~bpo9~rpt1 | http://archive.raspberrypi.org/debian stretch/main armhf Packages
+   	 hostapd | 2:2.4-1+deb9u2 | http://raspbian.raspberrypi.org/raspbian stretch/main armhf Packages
+	# apt-get install hostapd=2:2.4-1+deb9u2 -V
+
+	// I fogot, you would like to prevent future update with:
+
+	# apt-mark hold hostapd
+
+	// And remove the directive later with:
+	
+	# apt-mark unhold hostapd
+
+	// IF THERE IS STILL THE ERROR TRY UPPER AFTER BELOW
+
+	// The fix for me is to edit /etc/default/hostapd and set DAEMON_CONF="/etc/hostapd/hostapd.conf"
+
+	// hostapd FILE COULD NOT BE THERE SO CREATE IT THEN
+
+	// I found the problem by adding:
+
+	logger_syslog=-1
+
+	// to the
+
+	/etc/hostapd/hostapd.conf
+
+	// file. Then running
+
+	sudo cat /var/log/syslog | grep hostapd 
+
+	// to see the error messages.
+
+	// THIS SHOULD HELP
 
 4. Then:  
   
