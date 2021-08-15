@@ -3,6 +3,15 @@ Raspberry pi setup
 
 Here is some info about how to setup raspberry pi.
 
+RPI image setup:
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Connect the flash card to your laptop. And change *config.txt*:
+
+.. image:: imgs/config_chages.png
+   :align: center
+   :width: 700
+
 PWM setup:
 ^^^^^^^^^^^^^^^^^^^^^^^
 
