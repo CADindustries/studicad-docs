@@ -10,7 +10,7 @@ Connect the flash card to your laptop. And change *config.txt*:
 
 .. image:: imgs/config_changes.png
    :align: center
-   :width: 700
+   :width: 300
 
 PWM setup:
 ^^^^^^^^^^^^^^^^^^^^^^^
