@@ -111,6 +111,23 @@ There is also could be the error: ``E: Unable to locate package gfortran-arm-lin
 	-D BUILD_DOCS=OFF \
 	-D BUILD_EXAMPLES=OFF ..
 
+There could be a error, that ``gcc`` can't compile even a simple test program. So try to do this:
+
+.. code-block:: bash
+	:linenos:
+
+	sudo apt-get install scons
+	sudo apt-get install gcc-arm-linux-gnueabihf
+	sudo apt-get install g++-arm-linux-gnueabihf 
+	sudo apt-get install curl 
+	sudo apt-get install autoconf
+	sudo apt-get install libtool 
+	sudo apt-get install cmake
+	sudo apt-get install g++
+	sudo apt-get install wget
+
+Then when there won't be a error:
+
 .. code-block:: bash
 	:linenos:
 
