@@ -8,7 +8,7 @@ RPI image setup:
 
 Connect the flash card to your laptop. And change *config.txt*:
 
-.. image:: imgs/config_chages.png
+.. image:: imgs/config_changes.png
    :align: center
    :width: 700
 
