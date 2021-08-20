@@ -154,6 +154,46 @@ Source site: https://habr.com/ru/post/461693/ and https://solarianprogrammer.com
 
 .. code-block:: bash
 	:linenos:
+
+	sudo apt-get install build-essential
+	sudo apt-get install cmake
+	sudo apt-get install pkg-config
+	sudo apt-get install libpng12-0
+	sudo apt-get install libpng12-dev
+	sudo apt-get install libpng++-dev
+
+	sudo apt-get install libpng3
+	sudo apt-get install libpnglite-dev
+	sudo apt-get install zlib1g-dbg
+	sudo apt-get install zlib1g
+	sudo apt-get install zlib1g-dev
+	sudo apt-get install pngtools
+	sudo apt-get install libtiff4
+	sudo apt-get install libtiffxx0c2
+	sudo apt-get install libtiff-tools
+
+	sudo apt-get install libjpeg8
+	sudo apt-get install libjpeg8-dev
+	sudo apt-get install libjpeg8-dbg
+	sudo apt-get install libjpeg-progs
+	sudo apt-get install libavcodec-dev
+	sudo apt-get install libavformat-dev
+
+	sudo apt-get install libgstreamer0.10-0-dbg
+	sudo apt-get install libgstreamer0.10-0
+	sudo apt-get install libgstreamer0.10-dev
+	sudo apt-get install libunicap2
+	sudo apt-get install libunicap2-dev
+
+	sudo apt-get install libdc1394-22-dev
+	sudo apt-get install libdc1394-22
+	sudo apt-get install libdc1394-utils
+	sudo apt-get install swig
+	sudo apt-get install libv4l-0
+	sudo apt-get install libv4l-dev
+
+.. code-block:: bash
+	:linenos:
 	
 	export ANT_HOME=/usr/share/ant/
 	export PATH=${PATH}:${ANT_HOME}/bin
