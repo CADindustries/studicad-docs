@@ -222,6 +222,7 @@ This cmake makes ``libopencv_java440`` file but without all ``.so`` files:
 
 .. code-block:: bash
 	:linenos:
+
 	cmake -D CMAKE_BUILD_TYPE=RELEASE \
 	-D WITH_OPENCL=OFF \
 	-D BUILD_PERF_TESTS=OFF \
