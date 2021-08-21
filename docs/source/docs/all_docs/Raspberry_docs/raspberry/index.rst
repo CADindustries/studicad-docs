@@ -218,6 +218,21 @@ Source site: https://habr.com/ru/post/461693/ and https://solarianprogrammer.com
 
 10. Then cmake:
 
+This cmake makes ``libopencv_java440`` file but without all ``.so`` files:
+
+.. code-block:: bash
+	:linenos:
+	cmake -D CMAKE_BUILD_TYPE=RELEASE \
+	-D WITH_OPENCL=OFF \
+	-D BUILD_PERF_TESTS=OFF \
+	-D BUILD_SHARED_LIBS=OFF \
+	-D JAVA_INCLUDE_PATH=$JAVA_HOME/include \
+	-D JAVA_AWT_LIBRARY=$JAVA_HOME/jre/lib/amd64/libawt.so \
+	-D JAVA_JVM_LIBRARY=$JAVA_HOME/jre/lib/arm/server/libjvm.so \
+	-D CMAKE_INSTALL_PREFIX=/usr/local ..
+
+This doesn't make ``libopencv_java440`` but with ``.so`` files:
+
 .. code-block:: bash
 	:linenos:
 
