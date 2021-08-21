@@ -150,8 +150,6 @@ Then when there won't be a error:
 6. Here also could be a error while creating Makefile. Solution here: https://github.com/abhiTronix/raspberry-pi-cross-compilers/issues/60. 
 Source site: https://habr.com/ru/post/461693/ and https://solarianprogrammer.com/2018/12/18/cross-compile-opencv-raspberry-pi-raspbian/.
 
-7. Into bash: ``nano ~/.bashrc`` and add lines:
-
 .. code-block:: bash
 	:linenos:
 
@@ -191,6 +189,9 @@ Source site: https://habr.com/ru/post/461693/ and https://solarianprogrammer.com
 	sudo apt-get install swig
 	sudo apt-get install libv4l-0
 	sudo apt-get install libv4l-dev
+
+
+7. Into bash: ``nano ~/.bashrc`` and add lines:
 
 .. code-block:: bash
 	:linenos:
