@@ -224,6 +224,8 @@ This cmake makes ``libopencv_java440`` file but without all ``.so`` files:
 	:linenos:
 
 	cmake -D CMAKE_BUILD_TYPE=RELEASE \
+	-D OPENCV_EXTRA_MODULES_PATH=/home/pi/opencv_contrib-4.4.0/modules \
+	-D CMAKE_TOOLCHAIN_FILE=../platforms/linux/arm-gnueabi.toolchain.cmake \
 	-D WITH_OPENCL=OFF \
 	-D BUILD_PERF_TESTS=OFF \
 	-D BUILD_SHARED_LIBS=OFF \
