@@ -15,7 +15,46 @@ Connect the flash card to your laptop. And change *config.txt*:
 PWM setup:
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Go to `this <https://github.com/sarfata/pi-blaster>`__  repo and install it using **Build and install directly from source**
+1. Open up bash on your raspberry  
+
+2. Type this commands there:  
+  
+.. code-block:: bash
+	:linenos:
+
+	sudo apt-get install autoconf
+	
+	git clone https://github.com/sarfata/pi-blaster.git
+	cd pi-blaster
+
+	./autogen.sh
+	./configure
+	sudo make
+
+	sudo make install
+
+3. To check that it works, connect servo motor to HC dio 1 and:  
+  
+.. code-block:: bash
+	:linenos:
+
+	sudo /home/pi/pi-blaster/pi-blaster
+
+	echo "4=0.1" > /dev/pi-blaster
+
+4. If it doesn't work then:
+
+.. code-block:: bash
+	:linenos:
+
+	sudo nano /etc/default/pi-blaster
+
+
+And paste there ``DAEMON_OPTS="--gpio 4,17,18,27,21,22,23,24,25"``. Then reload rpi.  
+
+5. If it still doesn't work then check out that HC dio are powered using E3 pinout into RESET mode on VMX.  
+
+The source `site <https://github.com/sarfata/pi-blaster>`__ .  
 
 OpenCV setup:
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -48,7 +87,7 @@ OpenCV setup:
 
 	sudo apt install cmake git pkg-config wget
 
-3. On ``sudo apt install gfortran-arm-linux-gnueabihf`` could be a **error**. Solution could be on the site https://www.raspberrypi.org/forums/viewtopic.php?t=235145. 
+3. On ``sudo apt install gfortran-arm-linux-gnueabihf`` could be a **error**. Solution could be on the `site <https://www.raspberrypi.org/forums/viewtopic.php?t=235145>`__ . 
 There is also could be the error: ``E: Unable to locate package gfortran-arm-linux-gnueabihf``, but don't worry about this.
 
 .. code-block:: bash
@@ -147,8 +186,8 @@ Then when there won't be a error:
 
 	sudo make install/strip
 
-6. Here also could be a error while creating Makefile. Solution here: https://github.com/abhiTronix/raspberry-pi-cross-compilers/issues/60. 
-Source site: https://habr.com/ru/post/461693/ and https://solarianprogrammer.com/2018/12/18/cross-compile-opencv-raspberry-pi-raspbian/.
+6. Here also could be a error while creating Makefile. Solution `here <https://github.com/abhiTronix/raspberry-pi-cross-compilers/issues/60>`__ . 
+Source `site 1 <https://habr.com/ru/post/461693/>`__ and `site 2 <https://solarianprogrammer.com/2018/12/18/cross-compile-opencv-raspberry-pi-raspbian/>`__.
 
 .. code-block:: bash
 	:linenos:
@@ -191,70 +230,8 @@ Source site: https://habr.com/ru/post/461693/ and https://solarianprogrammer.com
 	sudo apt-get install libv4l-dev
 
 
-7. Into bash: ``nano ~/.bashrc`` and add lines:
+7. Download and paste ``libopencv_java440.so`` file into ``/home/pi/``. Download the file `here <https://drive.google.com/drive/folders/1d6YVfWcOcKhD59YbpL-TfAJx4KGPY06b?usp=sharing>`__  
 
-.. code-block:: bash
-	:linenos:
-	
-	export ANT_HOME=/usr/share/ant/
-	export PATH=${PATH}:${ANT_HOME}/bin
-	export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-armhf/
-	export PATH=$PATH:$JAVA_HOME/bin
-
-8. Reboot raspberry
-
-9. Then:
-
-.. code-block:: bash
-	:linenos:
-
-	cd ~
-	mkdir opencv_r && cd opencv_r
-	wget https://codeload.github.com/Itseez/opencv/zip/4.4.0
-	mv 4.4.0 opencv.zip
-	unzip opencv.zip 
-	cd opencv-4.4.0/
-	mkdir build && cd build
-
-10. Then cmake:
-
-This cmake makes ``libopencv_java440`` file but without all ``.so`` files:
-
-.. code-block:: bash
-	:linenos:
-
-	cmake -D CMAKE_BUILD_TYPE=RELEASE \
-	-D OPENCV_EXTRA_MODULES_PATH=/home/pi/opencv_contrib-4.4.0/modules \
-	-D CMAKE_TOOLCHAIN_FILE=../platforms/linux/arm-gnueabi.toolchain.cmake \
-	-D WITH_OPENCL=OFF \
-	-D BUILD_PERF_TESTS=OFF \
-	-D BUILD_SHARED_LIBS=OFF \
-	-D JAVA_INCLUDE_PATH=$JAVA_HOME/include \
-	-D JAVA_AWT_LIBRARY=$JAVA_HOME/jre/lib/amd64/libawt.so \
-	-D JAVA_JVM_LIBRARY=$JAVA_HOME/jre/lib/arm/server/libjvm.so \
-	-D CMAKE_INSTALL_PREFIX=/usr/local ..
-
-This doesn't make ``libopencv_java440`` but with ``.so`` files:
-
-.. code-block:: bash
-	:linenos:
-
-	cmake -D CMAKE_BUILD_TYPE=RELEASE \
-	-D OPENCV_EXTRA_MODULES_PATH=/home/pi/opencv_all/opencv_contrib-4.4.0/modules \
-	-D JAVA_INCLUDE_PATH=$JAVA_HOME/include \
-	-D CMAKE_TOOLCHAIN_FILE=../platforms/linux/arm-gnueabi.toolchain.cmake \
-	-D JAVA_AWT_LIBRARY=$JAVA_HOME/jre/lib/amd64/libawt.so \
-	-D JAVA_JVM_LIBRARY=$JAVA_HOME/jre/lib/arm/server/libjvm.so \
-	-D CMAKE_INSTALL_PREFIX=/usr/local ..
-
-.. code-block:: bash
-	:linenos:
-
-	make
-	sudo make install
-
-Source: https://robinhenniges.com/part-1-installing-opencv-3-1-0-on-raspberry-pi-debian-jessy-with-java-library/.
-
-11. Also you should check if you camera works using ``raspistill -o Desktop/image.jpg``. 
+8. Also you should check if you camera works using ``raspistill -o Desktop/image.jpg``. 
 If there is a error like *you should update firmware and smth like that* then your camera is broken. 
-My question on stackexchange: https://raspberrypi.stackexchange.com/questions/127622/build-opencv-for-java-on-rpi4/
+My question on `stackexchange <https://raspberrypi.stackexchange.com/questions/127622/build-opencv-for-java-on-rpi4/>`__
