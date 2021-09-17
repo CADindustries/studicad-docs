@@ -16,6 +16,7 @@ Welcome to the studicad documentation page. Here you can find how to use my soft
    docs/all_docs/IntelliJ_docs/index
    docs/all_docs/NetBeans_docs/index
    docs/all_docs/Raspberry_docs/index
+   docs/all_docs/Shufflecad_docs/index
 
 .. toctree::
    :maxdepth: 1
