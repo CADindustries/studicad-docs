@@ -1,5 +1,5 @@
 Getting started
-=========
+=======================
 
 Where to begin?  
 
