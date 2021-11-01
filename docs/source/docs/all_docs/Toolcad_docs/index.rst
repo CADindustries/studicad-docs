@@ -10,5 +10,11 @@ Here You can read about how to use **Toolcad** software
 .. toctree::
    :maxdepth: 1
 
-   Toolcad/index
+   Toolcad_about/index
+   Toolcad_order_board/index
+   Toolcad_shelf/index
+   Toolcad_gurneys/index
+   Toolcad_timer/index
+   Toolcad_random/index
+   Toolcad_errors/index
 
