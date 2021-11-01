@@ -7,7 +7,7 @@ Here is the *Gurneys* Page:
    :align: center
    :width: 600 
 
-Imagine we a this strange and shity field:
+Imagine we have this strange and shity field:
 
 .. image:: imgs/gurney_2.PNG
    :align: center
