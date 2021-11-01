@@ -5,13 +5,13 @@ Here is the *Timer* Page:
 
 .. image:: imgs/timer_1.PNG
    :align: center
-   :width: 350 
+   :width: 600 
 
 On the center you can see your timer and your current time:
 
 .. image:: imgs/timer_2.PNG
    :align: center
-   :width: 350 
+   :width: 400 
 
 On the right side you can manage timer settings. *Start* buttons will start timer. *Stop* - will stop. *Resume* - will resume if it is paused. *Pause* - will pause.
 

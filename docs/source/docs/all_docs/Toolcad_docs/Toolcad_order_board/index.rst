@@ -5,13 +5,13 @@ Here is the *OrderBoard* Page:
 
 .. image:: imgs/order_1.PNG
    :align: center
-   :width: 350 
+   :width: 600 
 
 You can select cells where you don't want elements to be spawned by clicking on them:
 
 .. image:: imgs/order_2.PNG
    :align: center
-   :width: 350
+   :width: 400
 
 On the right side you can manage how many of each elements should be spawned on the DELIVER and RET sides of the *OrderBoard*:
 
@@ -29,4 +29,4 @@ On the right side you can manage how many of each elements should be spawned on 
 
 .. image:: imgs/order_5.PNG
    :align: center
-   :width: 350
+   :width: 300

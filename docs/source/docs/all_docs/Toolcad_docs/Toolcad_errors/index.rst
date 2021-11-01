@@ -1,5 +1,5 @@
-Toolcad
+Toolcad Error Codes
 ======================================
 
-Here is some info about how to use **Toolcad**.
+Here is some info about error codes.
 
