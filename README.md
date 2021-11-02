@@ -5,4 +5,4 @@
 </p>
 <h1 align="center">studicad</h1> 
 
-Documentation for ```picad4j```, ```shufflecad``` and ```firmwarecad``` software
+Documentation for ```picad4j```, ```shufflecad```, ```toolcad``` and ```firmwarecad``` software
