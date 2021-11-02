@@ -14,6 +14,7 @@ Welcome to the studicad documentation page. Here you can find how to use my soft
    :caption: Documentations
    
    docs/all_docs/Toolcad_docs/index
+   docs/all_docs/Shufflecad_docs/index
 
 .. toctree::
    :maxdepth: 1
