@@ -13,7 +13,7 @@ On the center you can see your timer and your current time:
    :align: center
    :width: 400 
 
-On the right side you can manage timer settings. *Start* buttons will start timer. *Stop* - will stop. *Resume* - will resume if it is paused. *Pause* - will pause.
+On the right side you can manage timer settings. *Start* buttons will start timer. *Reset* - will reset. *Resume* - will resume if it is paused. *Pause* - will pause.
 
 .. image:: imgs/timer_3.PNG
    :align: center
