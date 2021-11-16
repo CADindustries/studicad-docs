@@ -7,7 +7,7 @@ Here is the *Gurneys* Page:
    :align: center
    :width: 600 
 
-Imagine we have this strange and shity field:
+Imagine we have this strange and shity field (1337/1488 shakals):
 
 .. image:: imgs/gurney_2.PNG
    :align: center
