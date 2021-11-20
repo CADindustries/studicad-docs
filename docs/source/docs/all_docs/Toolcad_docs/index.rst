@@ -16,5 +16,7 @@ Here You can read about how to use **Toolcad** software
    Toolcad_gurneys/index
    Toolcad_timer/index
    Toolcad_random/index
+   Toolcad_combined/index
+   Toolcad_settings/index
    Toolcad_errors/index
 
