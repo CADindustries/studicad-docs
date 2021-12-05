@@ -5,8 +5,6 @@ Toolcad
 
 It can be downloaded `here <https://drive.google.com/drive/folders/1MULGcDXXeqL1SJ7KRQgblY_s85TBMcss?usp=sharing>`__.   
 
-Of course there could be viruses, but I don't know how to make them. But next time make sure what you are downloading from the internet.
-
 *Toolcad 22.0.0.4* change list:
 
 - *Settings Page* added. You can change background. Enable and disable *Combined Page* button.  
