@@ -11,7 +11,7 @@ You can select places where you don't want cubes to be spawned by clicking on th
 
 .. image:: imgs/shelf_2.PNG
    :align: center
-   :width: 400
+   :width: 600
 
 On the right side you can manage how many of each cube you want to be spawned. There are two different modes of cube spawn: *ASIA* and *INTERNATIONAL*. *ASIA*: yellow cubes will spawn on the first floor, blue - on the second and white - on the third. *INTERNATIONAL*: different cubes will spawn in different places:
 
