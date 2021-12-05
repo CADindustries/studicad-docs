@@ -25,3 +25,8 @@ It can be downloaded `here <https://drive.google.com/drive/folders/1MULGcDXXeqL1
 - *Order Board* and *Gurneys* swapped in *Combined Page*.
 - Forbidden cells in *Order Board Page* and *Shelf Page* are gray now.
 - *Timer Page* bug fixes - it is normal now :)
+
+*Toolcad 22.0.0.7* change list:
+
+- Here is *Mobile Robotics* instead of *Abdrakov corp.* at the top of window now.
+- Loading is faster.
