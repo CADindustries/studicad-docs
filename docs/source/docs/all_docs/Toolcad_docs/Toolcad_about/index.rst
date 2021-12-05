@@ -17,7 +17,13 @@ Of course there could be viruses, but I don't know how to make them. But next ti
 
 - Fixed some bugs when app crashed.
 - Loading is more faster.
-- Window' navigation line is also *Papercad* color
+- Window' navigation line is also *Papercad* color.
 - Now you can change image in *Gurneys Page* using *Settings Page*.
 - On the right bottom you can see current page.
 - Now you can't do anything with pages from *Combined Page*.
+
+*Toolcad 22.0.0.6* change list:
+
+- *Order Board* and *Gurneys* swapped in *Combined Page*.
+- Forbidden cells in *Order Board Page* and *Shelf Page* are gray now.
+- *Timer Page* bug fixes - it is normal now :)
