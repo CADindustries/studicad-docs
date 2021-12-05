@@ -12,6 +12,8 @@ Here you can change apps background by setting *Default Background* to False sta
 .. image:: imgs/sett_2.PNG
    :align: center
    :width: 600 
+
+By disabling *Default Field* toggler and selecting your image in *Choose Field*, you can change image in *Gurneys Page*.
   
 Also you can enable and disable *Combined Page* button.  
 
