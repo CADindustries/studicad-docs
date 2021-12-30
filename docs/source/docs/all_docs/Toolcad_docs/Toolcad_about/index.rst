@@ -40,3 +40,8 @@ It can be downloaded `here <https://drive.google.com/drive/folders/1MULGcDXXeqL1
 - Random for *Order Board Page* and *Shelf Page* is better now.
 - Input boxes changed.
 - Other small changes and fixes.
+
+*Toolcad 22.0.0.9* change list:
+
+- Loading is a bit faster.
+- Some bug fixes.
