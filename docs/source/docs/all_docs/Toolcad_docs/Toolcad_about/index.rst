@@ -30,3 +30,13 @@ It can be downloaded `here <https://drive.google.com/drive/folders/1MULGcDXXeqL1
 
 - Here is *Mobile Robotics* instead of *Abdrakov corp.* at the top of window now.
 - Loading is faster.
+
+*Toolcad 22.0.0.8* change list:
+
+- *Info Page* added.
+- Computer info indicators added.
+- Contact info changed.
+- Lines in *Combined Page* changed.
+- Random for *Order Board Page* and *Shelf Page* is better now.
+- Input boxes changed.
+- Other small changes and fixes.
