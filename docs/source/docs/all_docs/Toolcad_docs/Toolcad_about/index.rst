@@ -45,3 +45,8 @@ It can be downloaded `here <https://drive.google.com/drive/folders/1MULGcDXXeqL1
 
 - Loading is a bit faster.
 - Some bug fixes.
+
+*Toolcad 22.0.0.10* change list:
+
+- Settings part added to *Order Board Page*. Now You can randomize more specifically.
+- Funny sentences added to the loading window. 
