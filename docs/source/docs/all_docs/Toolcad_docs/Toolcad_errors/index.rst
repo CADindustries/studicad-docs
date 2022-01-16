@@ -13,5 +13,11 @@ Toolcad Error Codes
 
 **Error 4** - possible only in *Random* page. When you wrote Min >= Max.
 
+**Error 5** - wrong values in generation settings.
 
+**Error 6** - impossible situation because of generation settings.
+
+**Error 7** - not enough space for spawn some elements because of generation settings.
+
+**Error 1337** - unhandled exception. Please contact me if you see this.
 
