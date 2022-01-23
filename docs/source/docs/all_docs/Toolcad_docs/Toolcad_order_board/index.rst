@@ -31,12 +31,14 @@ On the right side you can manage how many of each elements should be spawned on 
    :align: center
    :width: 300
 
-*Order Board Settings* buttonwill openconfiguration for *Order Board* randomizer:
+*Order Board Settings* button will open configuration for *Order Board* randomizer:
 
 .. image:: imgs/order_6.PNG
    :align: center
    :width: 350
 
-*MIR-(X)* (Max In a Room) settings are used to control max amout of elements of selected color, that can be spawned in a room.
-*DEL-RET-G* setting is used to control gurneys spawns in DELIVER and RET. If *true* - gurneys can be spawned in DELIVER and RET in the same room. If *false* - they can't.
-*NS-G* setting is used to control gurneys spawn in NS room. If *true* - gurneys can be spawned in DELIVER or/and RET in the NS room. If *false* - they can't.
+*MIR-(X)* (Max In a Room) settings are used to control max amout of elements of selected color, that can be spawned in a room.  
+
+*DEL-RET-G* setting is used to control gurneys spawns in DELIVER and RET. If *true* - gurneys can be spawned in DELIVER and RET in the same room. If *false* - they can't.  
+
+*NS-G* setting is used to control gurneys spawn in NS room. If *true* - gurneys can be spawned in DELIVER or/and RET in the NS room. If *false* - they can't.  
