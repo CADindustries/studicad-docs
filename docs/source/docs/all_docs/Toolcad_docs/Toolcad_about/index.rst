@@ -49,4 +49,15 @@ It can be downloaded `here <https://drive.google.com/drive/folders/1MULGcDXXeqL1
 *Toolcad 22.0.0.10* change list:
 
 - Settings part added to *Order Board Page*. Now You can randomize more specifically.
-- Funny sentences added to the loading window. 
+- Funny sentences added to the loading window.  
+
+*Toolcad 22.0.0.11* change list:
+
+- Timer is more correct now, but there still could be some lags.
+- New logic in splash window.
+- Loading is faster.
+- Can be downloaded from SoftHub.
+
+*Toolcad 22.0.0.12* change list:
+
+- Bug fixes.
