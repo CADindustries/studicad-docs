@@ -3,7 +3,7 @@ Toolcad
 
 **Toolcad v22** is a very useful app for WorldSkills Shanghai and other similar competitions.    
 
-It can be downloaded `here <https://drive.google.com/drive/folders/1MULGcDXXeqL1SJ7KRQgblY_s85TBMcss?usp=sharing>`__.   
+It can be downloaded using *SoftHub* launcher from `here <https://softv.su/SoftHub/Apps/SoftHub/SoftHubSetup.exe>`__.   
 
 *Toolcad 22.0.0.4* change list:
 
